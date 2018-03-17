@@ -1,0 +1,54 @@
+/*Responsive*/
+.responsive2
+{
+	padding: 0 6px;
+	float: left;
+	width: 33.3333%;
+}
+@media only screen and (max-width: 700px)
+{
+	.responsive2
+	{
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+@media only screen and (max-width: 500px)
+{
+	.responsive2
+	{
+		width: 100%;
+	}
+}
+/*Gallery*/
+div.gallery2
+{
+	border: none;
+	position: relative;
+	animation: hinh 5s;
+	-webkit-animation: hinh 5s;
+}
+div.gallery2 img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+@-webkit-keyframes hinh
+{
+	0%
+	{
+		opacity: 0.1;
+		left: 300px;
+		top: 0px;
+	}
+	100%
+	{
+		opacity: 1;
+		left: 0;
+		top: 0;
+	}
+}
+* {
+    box-sizing: border-box;
+}
