@@ -18,7 +18,9 @@
 	width: 100%;
 	height: auto;
 }	
-.slide-image:first-child{opacity:1;}
+.slide-image:first-child{
+	opacity:1;
+}
 .slide-pager {
 	  position: absolute;
 	  bottom: 5px;
