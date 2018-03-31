@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Bài 9</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+		<!-- Font Awesome Icons -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+			/*img là con trực tiếp của class item, item là con trực tiếp của class carousel-inner*/
+			.carousel-inner > .item > img,
+			.carousel-inner > .item > a > img
+			{
+				width: 110%;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 1.1 Home + Navigation bar -->
+		<div class="container-fluid" id="home">
+			 <nav class="navbar navbar-inverse mainmenu" >
+		  		<div class="container-fluid">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>                        
+				      </button>
+				      <a class="navbar-brand" href="Home.html" id="tieude"><span style="color: #FF0000">C</span>HAY RESTAURANT</a><br />
+				      <div id="subtieude" class="hidden-xs">Sẵn sàng ... phục vụ</div>
+				    </div>
+				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li><a href="#">TRANG CHỦ</a></li>
+				        <li><a href="#about">GIỚI THIỆU</a></li>
+				        <li><a href="#menu">THỰC ĐƠN</a></li>
+				        <li><a href="#service">DỊCH VỤ</a></li>
+				        <li><a href="#specials">MÓN ĐẶC BIỆT</a></li>
+				        <li><a href="#contact"><span class="glyphicon glyphicon-inbox"></span> LIÊN HỆ</a></li>
+				      </ul>
+			    	</div>
+		  		</div>
+		   </nav>
+		</div>
+		<!-- 1.2 Slider -->
+		<div class="container-fluid">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>  
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img src="images/banner.jpg" alt="" />
+			    </div>
+			    <div class="item">
+			      <img src="images/banner1.jpg" alt="" />
+			    </div>
+			    <div class="item">
+			      <img src="images/banner2.jpg" alt="">
+			    </div>
+			  </div>
+
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+
+		</div>
+		<div class="container-fluid">
+			<div style="height: 10px; background-color: red"></div>
+		</div>
+		<!-- 2. Giới thiệu -->
+		<div class="container-fluid" id="about">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<img src="images/about.jpg" class="img-responsive" />
+				</div>
+				<div class="col-xs-12 col-sm-6 hidden-xs"  id="subabout">
+					<h2 class="subtitle">Giới thiệu</h2>
+					<h3>BẠN LÀ NGƯỜI ĂN CHAY, HAY CẦN CÁC MÓN ĂN CHAY, HÃY TÌM ĐẾN CHÚNG TÔI</h3>
+					<p>
+						Nhà hàng Chay tọa lạc tại quận 1, quận 2 và quận 3, kề cận các điểm thu hút du lịch
+						 và mua sắm của thành phố. Lối thiết kế nhẹ nhàng, đầy cảm xúc đem đến cho thực khách không gian ấm cúng, yên bình. 
+						 Món dùng bổ dưỡng, thanh đạm, thuần tuý tự nhiên, được chế biến từ đậu, hạt, rau, củ, hoa, quả tươi. 
+						 Từng món ăn được chuẩn bị và trình bày thật chăm chút, khéo léo để thực khách tận hưởng sự tinh tế của sắc, hương, và 
+						 vị mỗi món dùng
+					</p>
+					<p>
+						Chúng tôi tự hào về thức ăn đồ uống tươi mới và sáng tạo của mình. Các nhà cung cấp có uy tín cho chúng tôi nguồn nguyên vật
+						 liệu tươi dồi dào. Đội ngũ bếp chuyên nghiệp, nhiều kinh nghiệm của nhà hàng chuẩn bị toàn bộ thức dùng ngay tại bếp, không 
+						 sử dụng MSG để tinh thần thân thiện với môi trường và hướng về sức khoẻ được tròn vẹn.
+					</p>
+					<p>
+						Chúng tôi mong muốn được đóng góp một quan niệm gần gũi, thân thiện hơn vào khái niệm ăn chay. 
+						Chúng tôi tin rằng những món ăn, thức uống chay thuần khiết được tạo nên từ những nguyên liệu đa dạng trong 
+						thiên nhiên đều có thể cung cấp đầy đủ dưỡng chất trong khi vẫn duy trì được hương vị thơm ngon tự nhiên và không 
+						kém phần thú vị. Đến với Vinh Vegan, hi vọng bạn sẽ thấy rằng việc ăn chay mỗi ngày không những hoàn toàn khả thi
+						 mà còn là một trải nghiệm ẩm thực hấp dẫn, sáng tạo và đủ đầy
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 3. Thực đơn nhiều gia vị -->
+
+		<!-- Các món đặc biệt của chúng tôi -->
+
+		<!-- Liên hệ -->
+
+		<!-- Footer -->
+		
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+</html>
